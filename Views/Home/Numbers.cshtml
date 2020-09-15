@@ -1,0 +1,17 @@
+﻿
+
+
+@model int[]
+<div class="container-fluid">
+<h2>Here are some numbers!</h2>
+<hr>
+    <div class="col-6">
+
+    <ul class="list-group">
+    @foreach (var number in Model){
+        <li class="list-group-item">@number</li>
+    }
+    </ul>
+
+    </div>
+</div>

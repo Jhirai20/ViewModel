@@ -1,0 +1,17 @@
+@using ViewModel.Models
+@model List<User>
+    <div class="container-fluid">
+<h2>Here are some Users!</h2>
+<hr>
+    <div class="col-6">
+
+    <ul class="list-group">
+
+    @foreach (var user in Model)
+    {
+        <li class="list-group-item">@user.FirstName @user.LastName</li>
+    }
+    </ul>
+
+    </div>
+</div>
